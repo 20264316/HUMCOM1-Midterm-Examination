@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Ralph Alejandrino's Midterm Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ralph Alejandrino's Midterm Portfolio</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="media.html">Media</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <hr class="header-divider">
+
+    <div class="card-container">
+        <img src="profile.jpg" alt="Profile picture of Ralph Alejandrino" class="profile-pic">
+        <h1>Contact Details</h1>
+        
+        <form action="https://example.com/post" method="POST">
+            <fieldset>
+                <legend class="sr-only">Contact Form</legend>
+                
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required minlength="3">
+                </div>
+                
+                <div class="form-group">
+                    <label for="emailAddress">Email Address *</label>
+                    <input type="email" id="emailAddress" name="emailAddress" required minlength="3">
+                </div>
+                
+                <div class="form-group">
+                    <label for="inquiryTopic">Inquiry Topic *</label>
+                    <select id="inquiryTopic" name="inquiryTopic" required>
+                        <option value="">-- Select Inquiry Type --</option>
+                        <option value="html">Custom Web Application Development</option>
+                        <option value="css">System Deployment & Staff Training</option>
+                        <option value="accessibility">Virtual Assistance & IT Support</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required minlength="3" placeholder="How can I help you?"></textarea>
+                </div>
+                
+                <button type="submit">Send Message</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <hr class="footer-divider">
+    
+    <footer>
+        <p>&copy; 2026 Portfolio | Ralph Alejandrino | All rights reserved</p>
+    </footer>
+</body>
+</html>
